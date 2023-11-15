@@ -34,7 +34,7 @@ namespace Renamer
                 return true;
             }
         }
-        public static void ManageUsers(CommandArgs args)
+        internal static void ManageUsers(CommandArgs args)
         {
             string subcmd = args.Parameters[0];
             if (subcmd == "add" && args.Parameters.Count == 4)
