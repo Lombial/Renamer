@@ -26,13 +26,14 @@ namespace Renamer
                 Commands.ChatCommands.RemoveAll(arg1 => arg1.Names.Exists(arg2 => arg.Names.Contains(arg2)));
                 Commands.ChatCommands.Add(arg);
             };
+
             if (Config.Settings.TurnOnUserCommandExtension)
                 add(new Command(Permissions.user, CommandResearch.Manageusers, "user")
                 {
                     DoLog = false,
                     HelpText = "Manages user accounts."
                 });
-            else
+            else if (Config.Settings.TurnOnAdminCommand)
                 add(new Command("renamer.admin", CommandResearch.Username, "username")
                 {
                     HelpText = "Manages user account name."
@@ -47,6 +48,6 @@ namespace Renamer
     public class Settings
     {
         public bool TurnOnUserCommandExtension = true;
-
+        public bool TurnOnAdminCommand = true;
     }
 }
