@@ -27,7 +27,7 @@ namespace Renamer
                 Commands.ChatCommands.Add(arg);
             };
 
-            if (Config.Settings.TurnOnUserCommandExtension)
+            if (Config.Settings.TurnOnUserCommandExtension && !Config.Settings.TurnOnAdminCommand)
                 add(new Command(Permissions.user, CommandResearch.Manageusers, "user")
                 {
                     DoLog = false,

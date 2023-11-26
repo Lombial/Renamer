@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renamer", "NameChanger\Renamer.csproj", "{8A50B636-7FB9-4016-9D80-DE5DC73C590C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renamer", "Renamer\Renamer.csproj", "{8A50B636-7FB9-4016-9D80-DE5DC73C590C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
